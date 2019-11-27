@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.jumbo{
+    width:100%;
+    position: relative;
+    z-index: 1;
+    transform: translateY(100%);
+    transistion: .5s;
+    color: white;
+    font-weight: 900;
+    background: radial-gradient(#efd0b7, #C4D3C4, #bbb4ae, #b9cfd6)
+    
+    
+  
+}
+.jumbo:hover{
+        transform: translateY(0);
+    }
+
+.infodiv{
+   width:100%;
+   position: relative;
+   transform: translateY(10%);
+   transition: .5s;
+   
+}
+
+  
+   
