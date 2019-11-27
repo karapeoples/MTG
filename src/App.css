@@ -25,9 +25,8 @@
     width:100%;
     position: relative;
     z-index: 1;
-    transform: translateY(100%);
-    transistion: .5s;
-    color: white;
+    transform: translateY(0);
+    transition: 3s;
     font-weight: 900;
     background: radial-gradient(#efd0b7, #C4D3C4, #bbb4ae, #b9cfd6)
     
@@ -35,14 +34,14 @@
   
 }
 .jumbo:hover{
-        transform: translateY(0);
+        transform: translateY(100%);
     }
 
 .infodiv{
    width:100%;
    position: relative;
-   transform: translateY(10%);
-   transition: .5s;
+   transform: translateY(-190%);
+   transition: 3s;
    
 }
 
