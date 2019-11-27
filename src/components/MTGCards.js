@@ -16,16 +16,16 @@ const width = {
 
 const InfoDiv= s.div`
  width:100%,
+ 
 `
 
 
 const center1= {
     textAlign: 'center',
+    
 }
 
-const color={
-    background: 'linear-gradient (to bottom, red, green, blue, white, black)'
-}
+
 function MTGCards ({ url, artist, name, desc, color1, color2, mana, num, type, set1, set2}) {
      
 
@@ -33,7 +33,7 @@ function MTGCards ({ url, artist, name, desc, color1, color2, mana, num, type, s
         <Col lg='4'>
      <div>
         
-        <Jumbotron className='jumbo' style={color}>
+        <Jumbotron className='jumbo'>
            <Container style={center}>
                 <img src={url} alt= 'Card' style={width} />
             </Container>
