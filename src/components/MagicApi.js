@@ -4,7 +4,7 @@ import MTGCards from './MTGCards';
 import {Container, Row} from 'reactstrap';
 
 function MagicApi() {
-	// Add your function name here
+	
 	const [info, setInfo] = useState([]);
 	useEffect(() => {
 		axios
@@ -24,12 +24,12 @@ function MagicApi() {
 
 	return (
     <Container> 
-        <Row>
-	{info.map(list => {
-	return <MTGCards   url={list.imageUrl} artist={list.artist} name={list.name} desc={list.text} color1={list.colorIdentity} color2={list.colors} mana={list.manaCost} num={list.number} type={list.type} set1={list.set} set2={list.setName} />;
-  })}
-  </Row>
-</Container>
+    <Row>
+        {info.map(list => {
+        return <MTGCards   url={list.imageUrl} artist={list.artist} name={list.name} desc={list.text} color1={list.colorIdentity} color2={list.colors} mana={list.manaCost} num={list.number} type={list.type} set1={list.set} set2={list.setName} />;
+    })}
+    </Row>
+    </Container>
     );
 }
 export default MagicApi;
